@@ -8,7 +8,7 @@
 /* Container styles */
 .container {
     background-color: rgb(167, 216, 209);
-    min-height: 100vh;
+    height: 100%;
     width: 90%;  /* Make container width smaller */
     max-width: 1000px;  /* Limit the max width */
     border: 5px solid black;
