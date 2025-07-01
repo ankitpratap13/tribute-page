@@ -1,0 +1,158 @@
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styles */
+.container {
+    background-color: rgb(167, 216, 209);
+    min-height: 100vh;
+    width: 90%;  /* Make container width smaller */
+    max-width: 1000px;  /* Limit the max width */
+    border: 5px solid black;
+    margin: 0 auto;  /* Center the container */
+    padding: 20px;
+}
+
+/* Image section styles */
+.image {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 180px;
+    border-radius: 40%;
+    background-image: url("images/APJ Abdul Kalam.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Top section styling (image and name) */
+.topsection {
+    display: flex;
+    justify-content: center;  /* Center the content */
+    align-items: center;  /* Align vertically */
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Name section styling */
+.name {
+    text-align: center;  /* Center the text */
+}
+
+.name h2 {
+    font-size: 36px;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+.name h4 {
+    font-size: 20px;
+}
+
+/* Bottom section styles */
+.bottomsection {
+    margin-top: 20px;
+}
+
+/* Bottom heading styles */
+.bottomhead h1 {
+    text-transform: capitalize;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Content section styles */
+.content {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Biographies section styling */
+.biographies {
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Points list styling */
+.points {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+.points ul {
+    padding-left: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    /* Adjust container width and padding for small screens */
+    .container {
+        width: 95%;
+    }
+
+    /* Adjust image size */
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Adjust font size and spacing for smaller screens */
+    .name h2 {
+        font-size: 28px;
+    }
+
+    .name h4 {
+        font-size: 18px;
+    }
+
+    .bottomhead h1 {
+        font-size: 30px;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+
+    .biographies {
+        font-size: 18px;
+    }
+
+    .points {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjust for very small screens */
+    .name h2 {
+        font-size: 24px;
+    }
+
+    .name h4 {
+        font-size: 16px;
+    }
+
+    .bottomhead h1 {
+        font-size: 24px;
+    }
+
+    .content {
+        font-size: 12px;
+    }
+
+    .points {
+        font-size: 12px;
+    }
+}
